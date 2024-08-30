@@ -1,2 +1,4 @@
-package com.example.ProductServiceAug24.mapped_super_class;public class Mentor {
+package com.example.ProductServiceAug24.mapped_super_class;
+
+public class Mentor {
 }

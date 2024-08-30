@@ -9,7 +9,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 public class CurrentWeatherService implements CurrentWeatherImp{
 
     private static final String API_URL = "https://api.openweathermap.org/data/2.5/weather";
-    private static final String API_KEY = "cc322d91d2aacf49430fed64c8ececb0";
+    private static final String API_KEY = "123";
 
     @Override
     public CurrentWeather getCurrentWeather(double lat, double lon) {
