@@ -7,4 +7,5 @@ public interface ProductService {
 
     public Product getProductByID(long id) throws ProductNotFoundException;
 
+    public Product createProduct(String name, String category, String description);
 }

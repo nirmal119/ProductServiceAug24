@@ -1,15 +1,11 @@
-package com.example.ProductServiceAug24.mapped_super_class;
+package com.example.ProductServiceAug24.single_table;
 
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
 import lombok.Data;
 
 //@Getter
 //@Setter
 @Data
-@MappedSuperclass
 public class User {
-    @Id
     private int id;
     private String name;
     private String email;

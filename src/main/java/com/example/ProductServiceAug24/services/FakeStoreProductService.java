@@ -6,7 +6,7 @@ import com.example.ProductServiceAug24.models.Product;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-@Service
+@Service("fakeStore")
 public class FakeStoreProductService implements ProductService{
     @Override
     public Product getProductByID(long id) throws ProductNotFoundException{
@@ -17,6 +17,11 @@ public class FakeStoreProductService implements ProductService{
             throw new ProductNotFoundException("Product with id " + id + " not found");
         }
         return convertFakeStoreProductDtoToProduct(fakeStoreProductDto);
+    }
+
+    @Override
+    public Product createProduct(String name, String category, String description) {
+        return null;
     }
 
     public Product convertFakeStoreProductDtoToProduct(FakeStoreProductDto dto) {

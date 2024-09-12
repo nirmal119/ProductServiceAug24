@@ -1,11 +1,11 @@
-package com.example.ProductServiceAug24.mapped_super_class;
+package com.example.ProductServiceAug24.table_per_class;
 
 import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
-@Entity(name = "msc_tas")
-public class TA extends User{
+@Entity(name = "tpc_tas")
+public class TA extends User {
     private int numberOfQuestions;
     private String college;
 }
