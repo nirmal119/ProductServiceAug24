@@ -1,15 +1,13 @@
 package com.example.ProductServiceAug24.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity(name = "products")
+@Table(name = "products")
 public class Product {
 
     @Id
